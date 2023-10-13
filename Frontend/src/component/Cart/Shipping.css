@@ -1,0 +1,160 @@
+.shippingContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shippingBox{
+    background-color: white;
+    width: 32rem;
+   
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 3rem auto;
+    border: none;
+    border-radius: 20px;
+    
+    box-shadow: 0 0 15px .5px rgb(23,26,254);
+}
+.shippingHeading{
+    text-align: center;
+    color: black;
+    font: 400 2rem "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgb(23,26,254);
+    width: 70%;
+    margin: 1.5rem auto;
+}
+
+.shippingForm{
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    flex-direction: column;
+   
+    justify-content: space-evenly;
+    height: 80%;
+    transition: all .5s;
+    align-items: center;
+}
+.shippingForm>div{
+    display: flex;
+    width: 100%;
+    margin:5px auto;
+    align-items: center;
+}
+.shippingForm>div>input,
+.shippingForm>div>select
+{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+   
+    box-sizing: border-box;
+    border: 1px solid rgba(23,26,254,0.7);
+    border-radius: 4px;
+    font: 300 1.1rem cursive;
+    outline: none;
+}
+
+.shippingForm>div>svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.7rem;
+    color: rgba(23,26,254,0.7);
+}
+.shippingBtn{
+    border: none;
+    background-color: rgb(23,26,254);
+     color: white;
+     font: 300 1rem "Roboto";
+     width: 100%;
+     border-radius: 20px;
+     padding: 1rem;
+     cursor: pointer;
+     transition: all .5s;
+     border: 2px solid rgb(23,26,254);
+     outline: none;
+     margin: 2vmax;   
+}
+
+.shippingBtn:hover{
+    background-color:white;
+    color: rgb(23,26,254);
+}
+
+
+@media screen and (max-width:1000px) {
+    .shippingBox{
+        width: 60%;
+        height: auto;
+    }
+
+    .shippingHeading{
+        font: 400 2rem "Roboto";
+        padding: 2rem;
+    }
+
+    .shippingForm{
+        padding: 2rem;
+    }
+
+    .shippingForm>div>input,
+    .shippingForm>div>select{
+        padding: 3vw 7vw;
+        font: 300 1.5rem cursive;
+    }
+
+    .shippingForm>div>svg{
+        font-size: 3vw;
+        transform: translateX(3vw);
+    }
+
+    .shippingBtn{
+        padding: 2rem ;
+        font: 300 2rem "Roboto";
+    }
+}
+
+@media screen and (max-width:700px) {
+    .shippingBox{
+        width: 80%;
+        height: auto;
+    }
+    .shippingBox{
+       
+        
+        box-shadow: 0 0 10px .5px rgb(23,26,254);
+    }
+}
+@media screen and (max-width:400px) {
+    .shippingBox{
+        width: 95%;
+       
+    }
+    .shippingBox{
+       
+        
+        box-shadow: 0 0 4px .5px rgb(23,26,254);
+    }
+    
+    .shippingForm>div>input,
+    .shippingForm>div>select{
+        padding: 3vw 7vw;
+        font: 300 1.1rem cursive;
+    }
+
+    .shippingForm>div>svg{
+        font-size: 2vw;
+        transform: translateX(3vw);
+    }
+
+    .shippingBtn{
+        padding: 1.4rem ;
+        font: 300 1.6rem "Roboto";
+    }
+}

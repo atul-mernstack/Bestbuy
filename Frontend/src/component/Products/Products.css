@@ -1,0 +1,168 @@
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    margin-left: 5vmax;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.productsHeading{
+   
+   display: flex;
+  
+   justify-content: center;
+   
+    
+}
+.productsHeading>h2{
+    margin-bottom: 3vmax;
+    border-bottom: 1px solid rgb(23, 26, 240);
+    padding-top: 10vmax;
+   
+    width: 20vmax;
+    color: rgba(0,0,0,0.678);
+   cursor: pointer;
+    font-weight: 500;
+    font-size: 1.9vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.productsHeading>h2:hover{
+    border-bottom: 2px solid red;
+}
+
+/*pagination css*/
+.paginationBox{
+    display: flex;
+    margin: 6vmax;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item{
+   
+    list-style: none;
+    border: 1px solid rgba(0,0,0,0.178);
+    padding: 1vmax 1.5vmax;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.page-link{
+    text-decoration: none;
+    font: 300 1.2rem "Roboto";
+    color: rgb(8, 8, 8);
+    transition: all .3s;
+}
+.page-item:hover{
+    color: rgb(23, 26, 240);
+}
+
+.page-item:hover .page-link{
+    color: rgb(80, 80,80);
+}
+.pageItemActive{
+    background-color:rgb(23, 26, 240);
+}
+
+.pageLinkActive{
+    color: white;
+}
+
+/*price slider*/
+.filterBox{
+    width: 10vmax;
+    position: absolute;
+   
+    top: 14vmax;
+    left: 4vmax;
+}
+.filterBox>fieldset{
+    border: 1px solid rgba(0,0,0,0.164);
+    margin: 1vmax 0;
+}
+.typo{
+    font-size: 1.5vmax !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slideprice:hover{
+    color: red !important;
+}
+.categoryBox{
+    padding: 0%;
+}
+
+.category-link{
+    list-style: none;
+    color: rgb(23, 26, 240);
+    font :400 1vmax "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all .5s;
+}
+.category-link:hover{
+    color: red
+}
+
+    @media screen and (max-width:1245px) 
+    {
+        .category-link{
+   
+    
+            font-size: 1.7vmax ;
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+    }
+
+@media screen and (max-width:1091px) {
+    .productsHeading{
+        padding-top: 8vmax;
+        
+    }
+  .productsHeading>h2{
+    font-weight: 500;
+        font-size: 4vmax;
+  }
+  .category-link{
+   
+    
+    font-size: 1.8vmax ;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+}
+@media screen and (max-width:600px) {
+    .filterBox{
+       
+        width: 20vmax;
+        
+        position: static;
+        margin: auto;
+    }
+  
+    .page-link{
+        font:300 1.7vmax "Roboto"
+    }
+    .category-link{
+        font :400 1.8vmax "Roboto";
+        margin:0.4vmax
+    }
+}

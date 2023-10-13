@@ -1,0 +1,27 @@
+.whats-app{
+    position: fixed;
+
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+   background-color:#25d366;
+   color: white;
+   border-radius: 50px;
+   
+   transition: all 0.5s linear;
+    z-index: 100;
+}
+
+.whats-app:hover{
+    width: 70px;
+    height: 70px;
+    bottom: 45px;
+    right: 20px;
+    
+   background-color: rgba(85, 204, 101, 0.842);
+}
+
+.my-float {
+    margin-top: 16px;
+}

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#footer{
+    bottom: 0;
+    left: 0;
+    
+}
+.developedwrap{
+    border-top: 2px solid rgb(226, 219, 219);
+    padding: 2vmax;
+    
+}
+
+.developer_info{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+   
+    
+ 
+   
+    
+
+}
+.leftFooter{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.leftFooter>p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.leftFooter > h4{
+    color: red;
+    margin: 2vmax;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leftFooter>img{
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+.midFooter{
+    width: 60%;
+    text-align: center;
+    color:black;
+}
+
+.midFooter>h1{
+  
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  rgb(23, 26, 240);
+}
+.midFooter>p{
+    width:50% ;
+    font-size: 1.4rem;
+    margin: 1vmax auto;
+}
+.rightFooter{
+    
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.rightFooter>h4{
+    color: rgb(23, 26, 240) !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    transition: all .5s;
+    text-decoration: underline;
+}
+
+
+.rightFooter>div>a{
+text-decoration: none;
+font-size: 1rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:black;
+text-align:left;
+margin: 0.1vmax;
+}
+.rightFooter>div>a>span{
+    position:relative;
+    top: -.9vmax;
+    
+    margin-left: 8px;
+  
+}
+.rightFooter>div>a:hover{
+    color: red;
+}
+
+.mediaqueary{
+    display: flex;
+    flex-direction: column;
+    }
+
+@media screen  and (max-width:550px){
+
+    footer{
+        flex-direction: column;
+    }
+
+    .leftFooter{
+width: 100%;
+    }
+
+    .midFooter{
+        width: 100%;
+    }
+    .midFooter>img{
+        width: 40% !important;
+    }
+
+    .rightFooter{
+        width: 100%;
+        
+       
+    }
+    .mediaqueary{
+       display: flex;
+       }
+       .rightFooter>div>a>span{
+        position:relative;
+        top: -2vmax;
+        
+        margin: auto 8px;
+      
+    }
+    .midFooter>p {
+        width: 100%;}
+}
+
+@media screen  and (max-width:470px){
+    .mediaqueary{
+        display: block;
+        }
+     .developedwrap{
+        padding: 1vmax 1vmax;
+     }
+    
+}

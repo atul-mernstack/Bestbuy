@@ -1,0 +1,50 @@
+.PageNotFound {
+    margin: auto;
+   
+    text-align: center;
+    padding-top: 13rem ;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PageNotFound > svg {
+    font-size: 8rem;
+    color: red;
+  }
+  .PageNotFound > p {
+    font-size: 2.2rem;
+  }
+  .PageNotFound > a {
+    background-color: rgb(23,26,254);
+    color: white;
+    border: 3px solid rgb(23,26,254);
+    border-radius: 20px;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    font: 400 1.1rem "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    margin: 2rem;
+    transition: all.5s;
+  }
+  .PageNotFound > a:hover{
+   background-color: white;
+   color: rgb(23,26,254);
+  }
+  @media screen and (max-width: 600px) {
+    .PageNotFound > a {
+      padding: 3vw 6vw;
+      font: 400 4vw "Roboto";
+      margin: 2vmax;
+    }
+  
+    .PageNotFound > svg {
+      font-size: 20vw;
+    }
+    .PageNotFound > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+  }

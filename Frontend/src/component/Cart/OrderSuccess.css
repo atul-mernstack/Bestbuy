@@ -1,0 +1,54 @@
+.orderSuccess {
+    margin: auto;
+    text-align: center;
+    padding: 10rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .orderSuccess > svg {
+    font-size: 7rem;
+    color:green;
+  }
+  .orderSuccess > p {
+    color: green;
+    font-size: 2rem;
+  }
+  .orderSuccess > a {
+    background-color:green;
+    border: 2px solid green !important;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font: 400 1.3rem "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border :2px;
+    text-decoration: none;
+    min-width: 200px;
+    margin: 2vmax;
+    transition: all  .5s;
+  }
+  .orderSuccess > a:hover{
+    color: green;
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderSuccess > a {
+      padding: 3vw 6vw;
+      font: 400 4vw "Roboto";
+      margin: 2vmax;
+    }
+  
+    .orderSuccess > svg {
+      font-size: 20vw;
+    }
+    .orderSuccess > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+  }

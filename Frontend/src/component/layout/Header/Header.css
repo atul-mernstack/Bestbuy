@@ -1,0 +1,36 @@
+.speedDial {
+    position: fixed;
+    right: 6vmax;
+    top: 1.9vmax;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .speedDialIcon {
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    
+    
+   
+  }
+  ReactNavbar{
+   z-index: 2;
+  }
+
+  @media screen and (max-width:1317px){
+    .speedDial {
+      
+      top: 2.4vmax;
+      
+    }
+    
+  }
+ 
+  @media screen and (max-width:991px){
+    .speedDial {
+      right: 10vmax;
+      top: 3vmax;
+      
+    }
+    
+  }

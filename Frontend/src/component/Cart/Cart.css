@@ -1,0 +1,198 @@
+.emptyCart{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    padding-top: 18vmax;
+    padding-bottom: 10vmax;
+   
+}
+.emptyCart>svg{
+    font-size: 4rem;
+    color: tomato;
+}
+.emptyCart>P{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.emptyCart>a{
+   background-color: rgb(23, 26, 240);
+   color: white;
+   text-decoration: none;
+   font: 400 1rem 'Roboto';
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: .8vmax 3vmax;
+   border: 2px solid rgb(23, 26, 240) !important;
+   border-radius: 20px;
+   cursor: pointer;
+   border: none;
+}
+.emptyCart>a:hover{
+    color: red;
+    border-color: red !important;
+    background-color: white;
+}
+.cartHeader{
+    background-color: rgb(23, 26, 240);
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    font:300 1.3rem "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cartHeader>p{
+    margin: 10px;
+}
+.cartHeader>P:last-child{
+    text-align: end;
+}
+.cartPage{
+    padding: 10rem 5vmax;
+}
+
+.cartContainer{
+   width: 90%;
+   margin: auto;
+   display: grid;
+   align-content:space-around;
+   
+   grid-template-columns: 3fr 1fr 1fr;
+
+}
+.cartInput{
+    height: 8vmax;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    
+    
+
+
+}
+
+.cartInput>button{
+    border: none;
+    background-color: rgb(23,26,254);
+    border-radius: 15px;
+    padding: .5rem;
+    border: 2px solid rgb(23,26,254);
+    margin: 0 4px;
+   font-size: 1.2rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   outline: none;
+    box-sizing: unset !important;
+    cursor: pointer;
+    color: white;
+    transition: all .5s;
+  
+}
+.cartInput>button:hover{
+    background-color: white;
+    color: rgb(23,26,254);
+   
+
+}
+.cartinputbox{
+    border: none;
+   
+    width: 2vmax;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: black !important;
+    text-align: center;
+    outline: none;
+}
+.cartSubtotal{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5vmax;
+    align-items: center;
+    color: black;
+    box-sizing: border-box;
+    font: 300 1.4rem cursive;
+    height: 7rem;
+    
+}
+
+.cartGrossTotal{
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossTotalBox{
+    border-top: 3px solid rgb(23, 26, 240);
+    margin: 1rem 3rem;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    font :300 1.4rem cursive;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkOutBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.checkOutBtn>button{
+    background-color: rgb(23, 26, 240);
+    border: 4px solid rgb(23, 26, 240);
+    color: white;
+   
+    padding: 0.7rem 3rem;
+   
+    font: 300 1.3rem "Roboto";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all .5s;
+}
+.checkOutBtn>button:hover{
+background-color: white;
+border: 4px solid rgb(23, 26, 240);
+color: rgb(23, 26, 240);
+}
+
+@media screen and (max-width:800px){
+
+    .cartPage{
+        padding: 0;
+        padding-top: 10rem; 
+        min-height: 60vh;
+    }
+    .cartContainer{
+        width: 100%;}
+        .cartHeader{
+            width: 100%;
+        }
+    
+   
+    .cartInput{
+        height: 13vmax;
+        
+        
+    
+    
+    }
+   
+    .cartGrossTotal{
+        display: grid;
+        grid-template-columns: 0fr 2fr;
+    }
+   
+    .checkOutBtn>button{
+        padding: 2vmax 4vmax;
+        margin: 2vmax 4vmax;
+        width: 100%;
+     
+        
+    }
+}
